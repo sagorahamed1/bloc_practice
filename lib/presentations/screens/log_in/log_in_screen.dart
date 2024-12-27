@@ -32,15 +32,15 @@ class LoginScreen extends StatelessWidget {
                 // Username TextField
                 TextField(
                   controller: _usernameController,
-                  decoration: InputDecoration(labelText: 'Username'),
+                  decoration: const InputDecoration(labelText: 'Username'),
                 ),
                 // Password TextField
                 TextField(
                   controller: _passwordController,
                   obscureText: true,
-                  decoration: InputDecoration(labelText: 'Password'),
+                  decoration: const InputDecoration(labelText: 'Password'),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
 
                 // BlocBuilder to build button UI based on the current state
                 BlocBuilder<LoginBloc, LoginState>(
@@ -50,7 +50,7 @@ class LoginScreen extends StatelessWidget {
 
                     // Show loading indicator when in LoginLoading state
                     if (state is LoginLoading) {
-                      return CircularProgressIndicator();
+                      return const CircularProgressIndicator();
                     }
 
                     return ElevatedButton(

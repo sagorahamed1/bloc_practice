@@ -16,5 +16,10 @@ class CounterBloc extends Bloc<CounterEvent, CounterState>{
     on<CounterZero>((state, emit){
       emit(CounterState(0));
     });
+
+
+    on<Counter100>((state, emit){
+      emit(CounterState(100));
+    });
   }
 }

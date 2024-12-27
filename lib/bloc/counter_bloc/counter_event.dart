@@ -7,3 +7,5 @@ class CounterDecrementPressed extends CounterEvent{}
 
 
 class CounterZero extends CounterEvent{}
+
+class Counter100 extends CounterEvent{}

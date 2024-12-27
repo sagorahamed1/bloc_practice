@@ -19,9 +19,11 @@ class MyApp extends StatelessWidget {
       title: 'bloc practice',
       home: MultiBlocProvider(
           providers: [
-            BlocProvider(create: (context) => LoginBloc())
+            BlocProvider(create: (context) => CounterBloc())
           ],
-          child:  LoginScreen())
+          child:  HomeScreen())
     );
   }
 }
+
+
